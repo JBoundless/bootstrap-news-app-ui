@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - News App UI</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Bootstrap News App UI</title>
+  </head>
+  <body class="bg-light text-black">
+    <div class="intro">
+    <h1>Bootstrap News</h1>
+    <p>The latest stories from around the U.S.</p>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://static01.nyt.com/images/2021/08/10/nyregion/10CUOMO-ASSESS1/10CUOMO-ASSESS1-superJumbo.jpg?quality=90&auto=webp" class="d-block w-100" alt="First Slide">
+  </div>
+    <div class="carousel-caption d-none d-md-block bg-dark bg-gradient">
+      <a href="https://www.nytimes.com/2021/08/10/nyregion/cuomo-legacy-resignation-speech.html" target="_blank"><h5>Andrew Cuomo Resigns</h5></a>
+    <p>Cuomo mayoral dynasty is over</p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://static01.nyt.com/images/2021/08/10/us/politics/10dc-infrastructure-sub/10dc-infrastructure-sub-videoSixteenByNine3000.jpg" class="d-block w-100" alt="Second Slide">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-gradient">
+        <a href="https://www.nytimes.com/2021/08/10/us/politics/infrastructure-bill-passes.html?action=click&module=Spotlight&pgtype=Homepage" target="_blank"><h5>Senate Passes Major Infrastructure Bill</h5></a>
+    <p>Trillion-dollar bill passes with 69-30 vote</p>
+    </div>
+  </div>
+    <div class="carousel-item">
+      <img src="https://apps.npr.org/dailygraphics/graphics/climate-report-line-change-20210808/observed.png" class="d-block w-100" alt="Third Slide">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-gradient">
+        <a href="https://www.npr.org/2021/08/10/1026137992/3-things-to-know-about-what-scientists-say-about-our-future-climate" target="_blank"><h5>Scientists Discuss the Future of our Climate</h5></a>
+    <p>Three things to know</p>
+  </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <h1 id="enjoy">Other Headlines</h1>
+
+<div class="row">
+<div class="card col-sm bg-light text-black" style="width: 18rem;">
+  <img src="https://media.npr.org/assets/img/2021/08/09/ap21208763189944_wide-f3a1adb6ea595b59c1cbe471c96160ef527604da-s800-c85.jpg" class="card-img-top" alt="Show">
+  <div class="card-body">
+    <h5 class="card-title">How to Keep Your Vaccination Card With You (NPR)</h5>
+    <p class="card-text">While the debate over mandated "vaccine passports" rages on, a growing number of employers, businesses and venues are demanding proof of vaccination. Here are some suggestions to ensure that vaccinated people are always covered.</p>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#articleModal">
+  See Preview
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> How to Keep Your Vaccination Card With You (Story Excerpt)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>By Vanessa Romo</h6>
+        <p>While the debate over mandated "vaccine passports" rages on, a growing number of employers, businesses and venues are demanding proof of vaccination. That's making it increasingly important for workers and customers to carry documentation that can be whipped out whenever the need arises.
+
+          Here are some suggestions to ensure that vaccinated people are always covered.</p>
+
+        <h2>Old-fashioned paper cards</h2>
+<p>Everyone who gets at least one inoculation gets one of these paper cards from the Centers for Disease Control and Prevention. However, at 4-by-3 inches they are larger than the average wallet, which means they're bound to suffer some abuse. The good news is they can be easily protected from everyday wear and tear with a little extra care.
+
+Along the same lines, there are lots of functional and/or cute vaccination card holders for safekeeping.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info"><a href="https://www.npr.org/sections/coronavirus-live-updates/2021/08/10/1026243726/how-to-keep-vaccination-confirmation-cards-with-you" target="_blank">Read More</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="card col-sm bg-light text-black" style="width: 18rem;">
+  <img src="https://www.fda.gov/files/covid19-1600x900.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">See the Data on Breakthrough Covid Hospitalizations and Deaths by State (New York Times)</h5>
+    <p class="card-text">Serious coronavirus infections among vaccinated people have been relatively rare since the start of the vaccination campaign, a New York Times analysis of data from 40 states and Washington, D.C., shows.</p>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#articleModal2">
+  See Preview
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="articleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">See the Data on Breakthrough Covid Hospitalizations and Deaths by State (Story Excerpt)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Read More</button>
+      </div>
+      <div class="modal-body">
+        <h6>By NYT</h6>
+        <p>Serious coronavirus infections among vaccinated people have been relatively rare since the start of the vaccination campaign, a New York Times analysis of data from 40 states and Washington, D.C., shows. Fully vaccinated people have made up as few as 0.1 percent of and as many as 5 percent of those hospitalized with the virus in those states, and as few as 0.2 percent and as many as 6 percent of those who have died.</p>
+
+<p>There is still a lot we do not know about so-called breakthrough infections — when fully inoculated people contract the virus. And there is some evidence that these cases are becoming more common as the more transmissible Delta variant surges. While vaccines have done a remarkable job at protecting a vast majority of people from serious illness, the data in the Times analysis generally spanned the period from the start of the vaccination campaign until mid-June or July, before the Delta variant became predominant in the United States.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info"><a href="https://www.nytimes.com/interactive/2021/08/10/us/covid-breakthrough-infections-vaccines.html?action=click&module=Top%20Stories&pgtype=Homepage" target="_blank">Read More</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="card col-sm bg-light text-black" style="width: 18rem;">
+  <img src="https://cbsnews3.cbsistatic.com/hub/i/r/2021/08/10/4659dbb2-f188-4d56-bca9-c1474696f83b/thumbnail/620x413/2b998799e995d4eb04ed7afeecd46b57/ap21159616099052.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">
+Justice Department and New Jersey agree on reforms for notorious women's prison (CBS News)</h5>
+    <p class="card-text">The Justice Department and New Jersey have reached an agreement to implement a series of reforms to better protect inmates from sexual abuse by staff at a notorious women's prison, officials announced Tuesday.</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#articleModal3">
+  See Preview
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="articleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Justice Department and New Jersey agree on reforms for notorious women's prison (Story Excerpt)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>By Paulina Smolinski</h6>
+        <p>The Justice Department and New Jersey have reached an agreement to implement a series of reforms to better protect inmates from sexual abuse by staff at a notorious women's prison, officials announced Tuesday.</p>
+        <p>If approved by a federal judge, the agreement would implement new policies at the Edna Mahan Correctional Facility such as confidential reporting methods for sexual abuse and improved measures to hold staff accountable. An independent monitor would oversee and assess the state's compliance with the agreement.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info"><a href="https://www.cbsnews.com/news/justice-department-new-jersey-reforms-consent-decree-edna-mahan-correctional-facility/" target="_blank">Read More</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+ </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
